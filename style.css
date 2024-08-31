@@ -691,11 +691,11 @@ span {
     margin-bottom: 30px;
 }
 
-footer {
+footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--footerBG);
+    background-color: var(--marine);
     color: var(--white);
     padding: 15px;
     width: 100%;
