@@ -1,0 +1,1291 @@
+:root {
+    --primary: #007bff;
+    --lightprimary: #0056b3;
+    --white: #ffffff;
+    --silver: #bcbcbc9e;
+    --defaultLinkColor: #333;
+    --yellow: #FFD700;
+    --muted: #777777;
+    --whiteBG: #F8FAFC;
+    --marine: #216583;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, 'Sans serif';
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--whiteBG);
+    border-bottom: 1px solid var(--silver);
+    padding-bottom: 5px;
+}
+
+header .nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 15px;
+    color: var(--silver);
+    background-color: var(--whiteBG);
+}
+
+.toggle_menu {
+    display: none;
+}
+
+header .nav img {
+    width: 130px;
+    height: 35px;
+}
+
+header .nav div a {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+header .nav .menu a:hover {
+    color: var(--primary);
+    font-weight: bold;
+
+}
+
+header .nav .menu button {
+    padding: 10px 30px;
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* Code CSS de la section HOME */
+
+#hiro {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#hiro .contener {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#hiro .div-left {
+    margin-bottom: 70px;
+
+}
+
+#hiro .div-left h1 {
+    font-size: 3.4vw;
+    margin-top: 10px;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+span {
+    color: var(--yellow);
+}
+
+#hiro .div-left p {
+    color: var(--muted);
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+
+#hiro .mon-img {
+    width: 500px;
+    border-radius: 14px;
+
+}
+
+#hiro .button-contener button {
+    margin-top: 15px;
+    padding: 8px 30px;
+    font-size: 14px;
+    background-color: var(--primary);
+    border-radius: 5px;
+    border: none;
+    color: var(--white);
+}
+
+#services {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#services .div-blue {
+    display: flex;
+    width: 100%;
+    padding: 20px 15px;
+    background-color: var(--primary);
+    justify-content: space-between;
+}
+
+#services .left {
+    color: var(--white);
+    padding: 40px;
+    font-size: 25px;
+    width: 61%;
+    margin: auto;
+}
+
+#services .left p {
+    font-size: 20px;
+    padding: 20px;
+}
+
+#services .right {
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#services .right div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--whiteBG);
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 16px;
+    margin: 30px;
+    color: var(--muted);
+    font-weight: bold;
+}
+
+#services .right div img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+#services .content-service {
+    display: flex;
+    justify-content: space-between;
+}
+
+#services .image-doctor {
+    background-color: #77777707;
+    border-radius: 25px;
+    height: 20%;
+    width: 40%;
+    margin-right: 50px;
+    padding-top: 5%;
+}
+
+#services .image-doctor img {
+    width: 80%;
+}
+
+#services .content-service {
+    width: 90%;
+    margin: auto;
+}
+
+.content-service .chield {
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(5, 50px);
+    gap: 0 15px;
+    margin-left: 50px;
+    margin-top: 6%;
+
+}
+
+.content-service .chield .title {
+    grid-column: 1/3;
+    list-style: none;
+    margin-left: 80px;
+    font-weight: bold;
+}
+
+.content-service .chield div {
+    display: flex;
+}
+
+.content-service .chield div img {
+    width: 25px;
+    height: 25px;
+}
+
+.content-service .chield div p {
+    margin-left: 10px;
+}
+
+
+#about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#about-us .special {
+    width: 100%;
+    display: flex;
+    font-size: 25px;
+    flex-direction: column;
+
+}
+
+
+#about-us .special h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 35px;
+}
+
+#about-us .special hr {
+    margin-top: 10px;
+    color: var(--silver);
+}
+
+#about-us .contener {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    gap: 70px;
+    margin: 50px 80px;
+    width: 90%;
+
+}
+
+#about-us .contener div {
+    background-color: var(--whiteBG);
+    padding: 30px;
+    color: var(--muted);
+    border-radius: 15px;
+    border: solid var(--silver) 1px;
+    height: 35vh;
+    align-content: center;
+}
+
+#about-us .contener div img {
+    width: 80px;
+    height: auto;
+}
+
+#about-us .contener h4 {
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#about-us .contener p {
+    font-size: 15px;
+    line-height: 22px;
+}
+
+#history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.glorius {
+    width: 100%;
+}
+
+.glorius div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.glorius div hr {
+    color: var(--silver);
+    margin-top: 5px;
+}
+
+#history .or-history {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: flex-start;
+
+}
+
+#history .or-history img {
+    width: 35%;
+    height: 40vh;
+    border-radius: 15px;
+}
+
+#history .or-history div {
+    width: 800px;
+    padding: 40px;
+    background-color: var(--whiteBG);
+    border: var(--muted) solid 1px;
+    border-radius: 10px;
+    height: 40vh;
+    border: var(--silver) solid 1px;
+    color: var(--muted);
+    line-height: 2;
+    font-size: 18px;
+}
+
+#history .or-history div h2 {
+    margin-bottom: 20px;
+}
+
+/* Code CSS de la section meet-doctor */
+
+#meet-doctor {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#meet-doctor .meet {
+    width: 100%;
+    display: flex;
+    font-size: 25px;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#meet-doctor .meet hr {
+    color: var(--silver);
+    margin-top: 5px;
+}
+
+#meet-doctor .doctors {
+    display: flex;
+    margin-top: 0px;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+
+}
+
+#meet-doctor .doctors div {
+    margin: 20px 5px;
+    color: var(--muted);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    line-height: 20px;
+    border: 1px solid var(--silver);
+    padding: 0 10px 10px 10px;
+    border-radius: 10px;
+}
+
+#meet-doctor .doctors div img {
+    width: 180px;
+}
+
+#meet-doctor .doctors div h2 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: black;
+    font-weight: normal;
+}
+
+#meet-doctor .doctors div button {
+    width: 120px;
+    padding: 5px 20px;
+    margin-top: 15px;
+    background-color: var(--whiteBG);
+    color: var(--lightpriary);
+    border-radius: 5px;
+    border-color: var(--primary);
+    border-style: solid;
+}
+
+
+#register {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#register .title {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+
+#register .title hr {
+    color: var(--silver);
+    margin-top: 5px;
+}
+
+#register .contener {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#register .contener img {
+    width: 30%;
+    border-radius: 25px;
+}
+
+#register .contener form {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(8, auto);
+    column-gap: 20px;
+    padding: 25px;
+    margin-right: 5%;
+    color: var(--muted);
+    width: 50%;
+}
+
+#register .contener form label {
+    font-size: 15px;
+    margin: 15px 0 2px 5px;
+
+}
+
+#register .contener form :is(input, select) {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: solid var(--silver) 1px;
+    background-color: transparent;
+    color: var(--muted);
+}
+
+#register .contener form textarea {
+    grid-column: 1/3;
+    height: 100px;
+    max-height: 100px;
+    min-height: 100px;
+    border: 5px;
+    border-radius: 5px;
+    border: solid var(--muted) 1px;
+    resize: none;
+    padding: 10px;
+
+}
+
+#register .contener form div {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+#register .contener form div select {
+    position: absolute;
+    bottom: 10px;
+    width: 50px;
+    border: none;
+    left: 20px;
+    padding: 0;
+    background-color: transparent;
+}
+
+#register .contener form div input {
+    padding-left: 70px;
+
+}
+
+#register .contener form .div-checkbox {
+    padding: 15px;
+    margin: 10px 0 10px 0;
+    grid-column: 1/3;
+    font-size: 5px;
+    color: var(--muted);
+    display: flex;
+    justify-content: start;
+}
+
+#register .contener form .div-checkbox :is(input, label) {
+    width: auto;
+    margin: 5px 0 5px 0;
+    padding: 5px 0 5px 0;
+}
+
+#register .contener form .div-checkbox label {
+    padding-left: 5px;
+}
+
+#register .contener form .div-checkbox {
+    margin-left: -15px;
+}
+
+#register .contener form input[type="submit"] {
+    grid-column: 1/3;
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 15px;
+}
+
+
+#subscribes {
+    width: 100%;
+    background-color: var(--whiteBG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#subscribes .subscribe {
+    width: 90%;
+    background-color: var(--marine);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    color: var(--white);
+    font-size: 20px;
+    border-radius: 15px;
+    margin: 30px;
+}
+
+#subscribes .subscribe h2 {
+    font-size: 2.5vw;
+}
+
+#subscribes .subscribe form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 100%;
+}
+
+#subscribes .subscribe input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--silver);
+    font-size: 20px;
+    color: var(--defaultLinkColor);
+    width: 30%;
+}
+
+#subscribes .subscribe input::placeholder {
+    color: var(--white);
+    font-size: 16px;
+
+}
+
+#subscribes .subscribe input[type="submit"] {
+    background-color: var(--whiteBG);
+    border-radius: 8px;
+}
+
+#informations {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+#informations .information {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+#informations .information div {
+    width: 30%;
+    color: var(--white);
+    padding: 0 2%;
+}
+
+#information infora.logo-dentic {
+
+    line-height: 35px;
+}
+
+.logo-dentic img {
+    width: 150px;
+    filter: brightness(0) invert(1);
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.welcomming {
+    border-left: solid var(--silver) 1px;
+}
+
+.welcomming h5 {
+    font-size: 25px;
+    margin: 20px 0px;
+}
+
+.important-link {
+    border-left: solid var(--silver) 1px;
+    border-right: solid var(--silver) 1px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.important-link h4 {
+    grid-column: 1/3;
+}
+
+.important-link a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.address h4 {
+    margin-bottom: 30px;
+}
+
+.address h5 {
+    margin-bottom: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--footerBG);
+    color: var(--white);
+    padding: 15px;
+    width: 100%;
+}
+
+
+/* ---------------------------------------SIGNUP------------------------------------------- */
+#signup {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#sign-up {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#signup form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 500px;
+    border: 1px solid var(--primary);
+    padding: 30px;
+    border-radius: 15px;
+    gap: 0 15px;
+}
+
+.img-row {
+    display: none;
+
+}
+
+signup-login {
+    display: none;
+}
+
+#signup form h1 {
+    font-size: 35px;
+    grid-column: 1/3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#signup form h1 span {
+    color: var(--yellow);
+}
+
+#signup form input {
+    padding: 8px 15px;
+    margin-bottom: 25px;
+    border: solid 1px var(--primary);
+    border-radius: 5px;
+}
+
+#signup form label {
+    margin-left: 3px;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+#signup form input[type="submit"] {
+    grid-column: 1/3;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 18px;
+    background-color: var(--primary);
+    border: none;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header-signup {
+    display: none;
+}
+
+#signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+#signup form {
+    display: flex;
+    width: 90%;
+    padding: auto 15px;
+}
+
+#signup form div {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+#signup form div input {
+    width: 100%;
+}
+
+#signup form input[type="submit"] {
+    width: 60%;
+}
+
+#signup {
+    margin-top: 50px;
+}
+
+#signup form {
+    width: 50%;
+}
+
+#signup form .img-row a {
+    width: 30px;
+}
+
+#signup form .img-row {
+    display: flex;
+    width: 100%;
+
+}
+
+#signup .signup-login {
+    width: 50%;
+    display: flex;
+    position: relative;
+
+    height: 50px;
+
+}
+
+#signup .signup-login .connect {
+    width: max-content;
+    font-size: 25px;
+    font-weight: bold;
+    bottom: 0;
+    text-decoration: none;
+    position: absolute;
+    right: -30px;
+    color: var(--primary);
+}
+
+
+/* ---------------------------------------LOGIN------------------------------------------- */
+
+#login {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#login form {
+    width: 400px;
+    border: 1px solid var(--primary);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+#login form .img-row {
+    display: none;
+}
+
+#login .signup-login {
+    display: none;
+}
+
+#signup .signup-login {
+    display: none;
+}
+
+#login form h1 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+#login form input {
+    padding: 10px 15px;
+    margin-bottom: 25px;
+    border: solid 1px var(--primary);
+    border-radius: 5px;
+    width: 80%
+}
+
+#login form div {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#login form div a {
+    text-align: right;
+
+    margin-left: 3px;
+    font-size: 12px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+#login form label {
+    margin-left: 3px;
+    font-size: 12px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+#login form label[for="email"] {
+    width: 80%;
+}
+
+#login form input[type="submit"] {
+    color: var(--white);
+    font-weight: bold;
+    font-size: 18px;
+    background-color: var(--primary);
+    border: none;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header-login {
+    display: none;
+}
+
+#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+}
+
+#login form {
+    width: 50%;
+    margin-top: 200px;
+
+}
+
+#login form .img-row a {
+    width: 30px;
+}
+
+
+#login form .img-row {
+    display: flex;
+    width: 100%;
+}
+
+
+
+
+
+/* Responsive */
+
+@media screen and (max-width:768px) {
+    #header .menu {
+        display: none;
+    }
+
+    #header #nav-bar img {
+        width: 90px;
+        height: 28px;
+        display: flex;
+        margin: auto 0;
+    }
+
+    #header .toggle_menu {
+        display: flex;
+        height: 40px;
+        width: 40px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+
+    }
+
+    #header .toggle_menu::before {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 25px;
+        background-color: var(--primary);
+        border-radius: 15px;
+        box-shadow: blue 0 8px 0;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+
+    #header .toggle_menu::after {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 25px;
+        background-color: var(--primary);
+        border-radius: 15px;
+        transform: translateY(6px);
+        transition: 0.5s;
+    }
+
+    #header .toggle_menu.active::before {
+        transform: translateY(0) rotate(135deg);
+        box-shadow: 0 0 0 var(--primary);
+        background-color: var(--yellow);
+    }
+
+    #header .toggle_menu.active::after {
+        transform: translateY(0) rotate(-135deg);
+        background-color: var(--yellow);
+    }
+
+    #header .menu.responsive {
+        display: flex;
+        position: absolute;
+        top: 59px;
+        right: 0;
+        width: 40%;
+        height: 35vh;
+        align-items: end;
+        justify-content: flex-start;
+        background-color: var(--yellow);
+        flex-direction: column;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    #header .menu a {
+        padding: 15px;
+
+    }
+
+    #header .menu button {
+        padding: 5px 25px;
+        margin-top: 5px;
+        margin-right: 3px;
+
+    }
+
+
+    #hiro .contener {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    #hiro .div-left h1 {
+        font-size: 6vw;
+
+
+    }
+
+    #hiro .div-left button {
+        margin: 10px auto 20px auto;
+    }
+
+    #hiro .contener img {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    #services .div-blue {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--primary);
+    }
+
+    #services .div-blue .left {
+        font-size: 4.2vw;
+
+    }
+
+    #services .div-blue .right {
+        margin: auto 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #services .div-blue .right div {
+        width: 250px;
+        height: 300px;
+    }
+
+    #services .div-blue .right div img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #services .image-doctor {
+        display: none;
+    }
+
+    #services .chield {
+        display: flex;
+        flex-direction: column;
+        line-height: 2.3;
+        font-size: 18px;
+    }
+
+    #services .chield .title {
+        text-align: left;
+        margin: 0 0 10px 0;
+        font-weight: bold;
+    }
+
+    #services .chield div {
+        display: flex;
+        align-items: center;
+    }
+
+    #about-us .contener {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #history .or-history {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #history .or-history img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #history .or-history div {
+        width: 100%;
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    #meet-doctor .doctors {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #meet-doctor .doctors div {
+        line-height: 1.5;
+        margin: 10px;
+        padding: 0 30px 20px 30px;
+    }
+
+    #meet-doctor .doctors div img {
+        width: 120px;
+    }
+
+    #register .contener img {
+        display: none;
+    }
+
+    #register .contener form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #register .contener form label {
+        display: none;
+    }
+
+    #register .contener form :is(input, select) {
+        width: 80%;
+    }
+
+    #register .contener form div {
+        width: 100%;
+    }
+
+    #register .contener form div select {
+        width: 40px;
+        left: 60px;
+    }
+
+    #register .contener form input[type="tel"] {
+        width: 80%;
+    }
+
+    #register form textarea {
+        width: 80%;
+        margin: 0;
+    }
+
+    #register .contener form .div-checkbox {
+        width: 80%;
+        justify-content: flex-start;
+        padding: 0;
+        padding: 0 5px;
+    }
+
+    #register form .div-checkbox input[type="checkbox"] {
+        width: 15px;
+    }
+
+    #register form .div-checkbox label {
+        display: flex;
+        font-size: 2vw;
+    }
+
+    #register .contener form input[type="submit"] {
+        width: 80%;
+    }
+
+    #subscribes .subscribe h2 {
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    #subscribes form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        width: 80%;
+    }
+
+    #subscribes .subscribe form input {
+        width: 100%;
+        padding: 8px;
+        margin: 15px 0;
+    }
+
+    #subscribes .subscribe form input[type="submit"] {
+        padding: 8px;
+        font-size: 2.5vw;
+    }
+
+    #informations .information {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    #informations .information div {
+        width: 80%;
+        font-size: 2vw;
+        border: none;
+        line-height: 1.8;
+    }
+
+    #informations .information .logo-dentic img {
+        width: 18vw;
+        margin-top: 0;
+    }
+
+    #informations .information .welcomming h5 {
+        font-size: 3.5vw;
+        margin: 5px;
+    }
+
+    #informations .information .important-link {
+        gap: 5px 20px;
+    }
+
+    #informations .information .inportant-link h4 {
+        font-size: 2vw;
+    }
+
+    #informations .information .address h4 {
+        font-size: 3vw;
+        margin-bottom: 5px;
+        margin-top: 15px;
+    }
+
+    #informations .information .address h5 {
+        margin-bottom: 5px;
+        font-size: 2vw;
+        font-weight: normal;
+    }
+
+    footer {
+        font-size: 3vw;
+    }
+}

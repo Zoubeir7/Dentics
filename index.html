@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
+    <title>Clinic Dentic</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- la navbar -->
+    <header id="header">
+        <nav class="nav">
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo" class="logo-header">
+            </a>
+            <div class="menu">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about-us">About us</a>
+                <a href="#register">Appoinment</a>
+                <a href="sign-up.html">Sign Up</a>
+                <button id="button">Login</button>
+            </div>
+            <div class="toggle_menu">
+
+            </div>
+        </nav>
+    </header>
+    <!-- le script js pour menu humberger -->
+    <script>
+
+        let small_menu = document.querySelector('.toggle_menu')
+        let menu = document.querySelector('.menu')
+        small_menu.onclick = function () {
+            small_menu.classList.toggle('active');
+            menu.classList.toggle('responsive');
+        }
+        document.getElementById("button").addEventListener("click", function () {
+            window.location.href = "login.html";
+        });
+
+        function zu() {
+            let result = parseInt(prompt('veillez entrez un numéro'))
+            alert(result * 2)
+        }
+    </script>
+
+    <main>
+        <section id="hiro">
+            <div class="contener">
+                <div class="div-left">
+                    <h1>We Provide High</h1>
+                    <h1>Quality <span>Dental </span>Services</h1>
+                    <p>Appropriately embrace transparent materials via <br>
+                        turnkey niche markets</p>
+                    <div class="button-contener">
+                        <button class="button-blue">Make an appointment</button>
+
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="images/dental-pexels-photo-6627462.jpeg" alt="Image dental pexels" class="mon-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- How to get service -->
+
+        <section id="services">
+            <div class="div-blue">
+                <div class="left">
+                    <h2>How to get our service?</h2>
+                    <p>just follow these simple steps</p>
+                </div>
+                <div class="right">
+                    <div class="call">
+                        <img src="images/call.png" alt="image call">
+                        <p>Call for <br> approintment</p>
+                    </div>
+                    <div class="call">
+                        <img src="images/date.png" alt="image date">
+                        <p>Get a <br> Date & Serial</p>
+                    </div>
+                    <div class="call">
+                        <img src="images/doctor-consult.png" alt="image doctor consult">
+                        <p>Consult <br> Your dentist</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-service">
+                <div class="image-doctor">
+                    <img src="images/doctor.png" alt="image doctor">
+                </div>
+
+                <div class="chield">
+                    <p class="title">WHAT WE PROVIDE</p>
+                    <div>
+                        <img src="images/shield.png" alt="image chield">
+                        <p>Check ups</p>
+                    </div>
+                    <div>
+                        <img src="images/shield.png" alt="image chield">
+                        <p>Emergencies</p>
+                    </div>
+                    <div>
+                        <img src="images/shield.png" alt="image chield">
+                        <p>Cosmetic dentistry</p>
+                    </div>
+                    <div>
+                        <img src="images/shield.png" alt="image chield">
+                        <p>Dental implants</p>
+                    </div>
+
+                    <div>
+                        <img src="images/shield.png" alt="image chield">
+                        <p>Orthodontics</p>
+                    </div>
+
+                    <div>
+                        <img src="images/shield.png" alt="image chield">
+                        <p>Children's dentistry</p>
+                    </div>
+
+                    <div>
+                        <img src="images/shield.png" alt="image chield">
+                        <p>Preventative checks</p>
+                    </div>
+
+                    <div>
+                        <img src="images/shield.png" alt="image chield">
+                        <p>Telephone consultations</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- OUR SERVICES       -->
+
+        <section id="about-us">
+            <div class="special">
+                <h2>OUR <span>SERVICES</span></h2>
+                <hr>
+            </div>
+            <div class="contener">
+                <div>
+                    <img src="images/feat1.png" alt="Laser Technology">
+                    <h4>Laser Technology</h4>
+                    <p>Worlds most advanced Diode Laser. Your teatment experience will be relaxing & smooth.</p>
+                </div>
+                <div>
+                    <img src="images/feat2.png" alt="Painless Inection">
+                    <h4>Painless Injectjeion</h4>
+                    <p>Only dental clinic in New York, USA utilising Painless Injection system. You will be amazed!</p>
+                </div>
+                <div>
+                    <img src="images/feat3.png" alt="Dental implants">
+                    <h4>Dental Implant</h4>
+                    <p>30+ years of experience in Dental Implant with specialist care. You will be able to chew properly
+                        again!</p>
+                </div>
+                <div>
+                    <img src="images/feat4.png" alt="Logo 3D Dental Scanner">
+                    <h4>3D Dental Scanner</h4>
+                    <p>One of the world's most advanced 3D Dental Scanner with auto scanning only one in New York!</p>
+                </div>
+                <div>
+                    <img src="images/feat5.png" alt="Logo Digital Smile">
+                    <h4>Digital Smile Design</h4>
+                    <p>We help to re-design your smile and shape your teeth to create a customised smile for your face!
+                    </p>
+                </div>
+                <div>
+                    <img src="images/feat6.png" alt="Logo Crown ">
+                    <h4>Crown and Bridge</h4>
+                    <p>Transform your blackish gum to pinkish colour with painless, single appoitment Laser Gum
+                        Treatment
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="history">
+            <div class="glorius">
+                <div>
+                    <h2>WHO <span>WE ARE</span></h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="or-history">
+                <img src="images/types-dentistry-specialties-feature.png" alt=" Close up smiley patient at appointment">
+                <div>
+                    <h2>Our history</h2>
+                    <p>Dentics is a well-known name in dental and oral care in New York. <br>
+                        The journey of this institution started in 1990 under the hands of Dr. Jonathon Doe, Gold
+                        Medalist
+                        of Harvard University. Dentics dental cneter has been leading the way in dental teamtment in USA
+                        for
+                        more than 30 years in keeping with the evolution of time and the modernization of the era.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="meet-doctor">
+            <div class="meet">
+                <h2>MEET OUR <span>DOCTOR</span></h2>
+                <hr>
+            </div>
+            <div class="doctors">
+                <div>
+                    <img src="images/Doctor01.png" alt="Doctor numéro 1">
+                    <h2>Dr. Jeanette Hoff</h2>
+                    <p>Orthodontic Treatment <br>
+                        Yale Medical School</p>
+                    <button>Appoinment</button>
+                </div>
+                <div>
+                    <img src="images/Doctor02.png" alt="Doctor numéro 2">
+                    <h2>Dr.David Ambrose</h2>
+                    <p>Orthodontic Treatment <br>
+                        Harvard Medical School</p>
+                    <button>Appoinment</button>
+                </div>
+                <div>
+                    <img src="images/Doctor03.png" alt="Doctor numéro 3">
+                    <h2>Dr. Jeanette Hoff</h2>
+                    <p>Orthodontic Treatment <br>
+                        Oxford Medical School</p>
+                    <button>Appoinment</button>
+                </div>
+                <div>
+                    <img src="images/Doctor04.png" alt="Doctor numéro 4">
+                    <h2>Dr. Jagajeet Aurora</h2>
+                    <p>Orthodontic Treatment <br>
+                        Harvard Medical School</p>
+                    <button>Appoinment</button>
+                </div>
+            </div>
+        </section>
+        <section id="register">
+            <div class="title">
+                <h2>APOINMENT</h2>
+                <hr>
+            </div>
+            <div class="contener">
+                <img src="images/doctor-with-tablet-computer.jpg" alt="image contact">
+                <form action="#">
+                    <label for="name">Name</label>
+                    <label for="phone">Phone</label>
+                    <input type="text" name="name" id="name" pattern="[^0-9]*" placeholder="Full name" required>
+                    <div>
+                        <select name="phone" id="code">
+                            <option value="+01">+01</option>
+                        </select>
+                        <input type="tel" name="phone" id="phone" pattern="[0-9]{8}" placeholder="(555) 000-0000">
+                    </div>
+                    <label for="date">Date</label>
+                    <label>Doctor</label>
+                    <input type="date" name="date" id="date" required>
+                    <select>
+                        <option value="Dr. pritis Barua">Dr. Pritis Barua</option>
+                    </select>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Include a message..."></textarea>
+                    <div class="div-checkbox">
+                        <input type="checkbox" name="checkbox" id="checkbox" required>
+                        <label for="checkbox">You agree to our friendly privacy policy.</label>
+                    </div>
+                    <input type="submit" name="confime" id="confim" value="confirm Appoinment">
+                </form>
+            </div>
+        </section>
+
+
+        <section id="subscribes">
+            <div class="subscribe">
+                <h2>Subscribe to our newsletter</h2>
+                <form>
+                    <input type="text" placeholder="First name" required>
+                    <input type="email" placeholder="Email address" required>
+                    <input type="submit" value="Subscribe Now">
+                </form>
+
+            </div>
+        </section>
+        <section id="informations">
+            <div class="information">
+                <div class="logo-dentic">
+                    <img src="images/logo.png" alt="image Logo">
+                    <p>Dentics is a well-known name in dental and oral care in New York. The journey of this institution
+                        stard in 1990</p>
+                </div>
+                <div class="welcomming">
+                    <h4>We are welcomming you</h4>
+                    <h5>Want to vitsit our clinic?</h5>
+                    <p>Saturday-Thusday <br>
+                        10 am - 9 pm</p>
+                </div>
+                <div class="important-link">
+                    <h4>important link</h4>
+                    <a href="#">Facebook</a>
+                    <a href="#">Carrer</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Support</a>
+                    <a href="#">Instagram </a>
+                    <a href="#">Privacy policy</a>
+                </div>
+                <div class="address">
+                    <h4>say hello to us</h4>
+                    <h5>hello@greallygreatsite.com</h5>
+                    <p>address <br>
+                        123 Anywhere St., Any City, NY 39200</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2001-2022, All Right Reservide</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
