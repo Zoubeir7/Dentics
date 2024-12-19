@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sign Up</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header" class="header-signup">
+        <nav id="nav-bar">
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo" class="logo-header">
+            </a>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about-us">About us</a>
+                <a href="#register">Appoinment</a>
+                <a href="sign-up.html">Sign Up</a>
+                <button id="button">Login</button>
+            </div>
+            <div class="toggle_menu">
+                
+            </div>
+        </nav>
+    </header>
+    <section id="signup">
+        <form action="#" id="sign-up">
+
+            <div class="img-row">
+                <a href="index.html"><img src="images/arrow-left.svg" alt="return arrow" width="25px"></a>
+            </div>
+
+            <h1>Sign <span> Up</span></h1>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" placeholder="Enter your name " name="name" pattern="[^0-9]*" required>
+            </div> 
+            <div>
+                 <label for="email">Email</label>
+                 <input type="email" placeholder="Enter your Email " name="email" required>   
+            </div> 
+
+
+             <div>
+                  <label for="password">Password</label>
+                  <input type="password" name="password" placeholder="Enter your password" required>
+            </div>  
+            <div>
+                <label for="conforim-password">Confirm password</label>
+                <input type="password" name="confirm-password" placeholder="confirm your password " required>
+            </div>
+
+             <div>
+                 <label for="phone">Phone</label>
+                 <input type="tel" name="phone" maxlength="8" minlength="8" pattern="[0-9]+" placeholder="Enter your phone number "  required title="Entrez un numero de Telephone de 8 chiffres">
+            </div>
+            <div>
+            <label for="address">Address</label>
+            <input type="text" name="address" placeholder="Enter your address "  required>
+            </div>
+            <input type="submit" name="confim" id="#" value="Sign Up">
+
+
+            <div class="signup-login">
+                <a href="login.html" class="connect">Login</a>
+            </div>
+  
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
